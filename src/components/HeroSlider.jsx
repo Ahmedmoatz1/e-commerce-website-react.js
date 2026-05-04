@@ -1,27 +1,31 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './HeroSlider.css';
 
+// استيراد الصور لضمان عمل المسارات بعد الرفع
+import hero1 from '../img/banner_hero1.png'; 
+import zFold from '../img/z_fold.png';
+import appleWatch from '../img/apple_watch.png';
+
 const products = [
   {
     title: "Xbox Series X",
     desc: "The most powerful Xbox ever.\n12 TFLOPS, 4K@120FPS, 1TB SSD.",
     color: "#0A3233",
-    img: "/img/banner_hero1.png"
+    img: hero1 // استخدم المتغير المستورد هنا
   },
   {
     title: "Galaxy Z Fold 2",
     desc: "The ultimate foldable experience.\nBronze edition with 7.6\" AMOLED.",
     color: "#8B6F47",
-    img: "/img/z_fold.png"
+    img: zFold
   },
   {
     title: "Apple Watch Ultra 2",
     desc: "Rugged titanium case, Orange Alpine Loop,\n36-hour battery.",
     color: "#FF4500",
-    img: "/img/apple_watch.png"
+    img: appleWatch
   }
 ];
-
 const HeroSlider = () => {
   const [index, setIndex] = useState(0);
   const touchStartX = useRef(0);
