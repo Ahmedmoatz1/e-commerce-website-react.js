@@ -1,0 +1,121 @@
+.topHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  padding-top: 16px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  min-height: 80px; /* ارتفاع ثابت مهما كانت الشاشة */
+}
+
+.logo {
+  font-size: 2.6rem;
+  color: #fff;
+  font-weight: 900;
+  background-color:#0066ff;
+  border: #0066ff 5px solid;
+  transform: scale(1.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.5);
+}
+
+.searchWrapper {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+  order: 2; /* في الموبايل ينزل تحت */
+}
+
+.headerIcons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  order: 3;
+}
+
+.icon {
+  position: relative;
+  font-size: 24px;
+  color: #000;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.count {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #0066ff;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 768px) {
+ 
+  .container {
+    flex-direction: column;
+    padding: 26px;
+    gap: 26px;
+    top: 70px;
+    
+    width: 100%;
+  }
+
+  .logo {
+    order: 1;
+    position: absolute;
+    top: 20px;
+    left: 24px;
+
+  }
+
+  .searchWrapper {
+    order: 3;
+    top: 70px;
+    width: 90%;
+  }
+
+  .headerIcons {
+    order: 2;
+    position: absolute;
+
+
+    top: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 2.2rem;
+  }
+}

@@ -1,0 +1,129 @@
+/* Login.module.css */
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loginBox {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.loginTitle {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #1d1d1f;
+}
+
+.inputField {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: #2575fc;
+  box-shadow: 0 0 10px rgba(37, 117, 252, 0.3);
+}
+
+.loginButton {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  background: #2575fc;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.loginButton:hover {
+  background: #1b5fc0;
+  transform: scale(1.03);
+}
+
+.switchAuth {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #6e6e73;
+}
+
+.switchAuth span {
+  color: #2575fc;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.switchAuth span:hover {
+  text-decoration: underline;
+}
+
+.loggedInBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.logoutButton {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  background: #ff4d6d;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logoutButton:hover {
+  background: #e03b5a;
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .loginBox,
+  .loggedInBox {
+    padding: 30px 20px;
+  }
+
+  .loginTitle {
+    font-size: 24px;
+  }
+
+  .inputField {
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+
+  .loginButton,
+  .logoutButton {
+    font-size: 16px;
+    padding: 12px;
+  }
+}

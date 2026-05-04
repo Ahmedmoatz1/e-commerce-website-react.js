@@ -1,0 +1,32 @@
+.userIconContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.loggedIn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #1d1d1f;
+}
+
+.userIcon {
+  font-size: 28px;
+}
+
+.userName {
+  font-size: 16px;
+}
+
+.loginIcon {
+  font-size: 28px;
+  color: #0071e3;
+  transition: transform 0.3s ease;
+}
+
+.loginIcon:hover {
+  transform: scale(1.1);
+  color: #005bb5;
+}
