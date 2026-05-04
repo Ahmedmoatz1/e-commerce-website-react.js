@@ -1,6 +1,6 @@
 <!-- 🌟 PROJECT BANNER -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Ahmedmoatz1/e-commerce-website-react.js/main/src/assets/banner.png" alt="E-commerce Project Banner" width="100%" style="border-radius:16px;" />
+  <img src="https://github.com/Ahmedmoatz1/e-commerce-website-react.js/blob/main/Screenshot%202026-05-04%20144151.png" alt="E-commerce Project Banner" width="100%" style="border-radius:16px;" />
 </p>
 
 <!-- HEADER -->
